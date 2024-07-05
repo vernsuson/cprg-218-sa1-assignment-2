@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +13,40 @@
     <link rel="stylesheet" type="text/css" href="./styles/hero banner.css" />
     <title>Responsive and Static Website</title>
 </head>
+
 <body>
-    
+    <!-- accordion -->
+    <div class="navbar">
+        <a href="#home" class="active">Home</a>
+        <button class="dropbtn">Shop All</button>
+        <div class="dropdown-content">
+            <a href="#">Eyes</a>
+            <a href="#">Lips</a>
+            <a href="#">Face</a>
+        </div>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!-- end accordion -->
+
+    <!-- hero banner -->
+    <div class="hero-grid">
+        <div class="hero-flex">
+            <p>BE BOLD. BE CONFIDENT. BE YOU.</p>
+            <img src="./images/ashley-piszek-crSkE1CKQL0-unsplash.jpg" alt="4 shades of lipstick">
+            <div class="shopbtn-flex">
+                <button class="shopbtn">Shop all</button>
+                <img src="./images/vecteezy_arrow-symbol-isolated-flat-design-vector-illustration_17436350.jpg">
+            </div>
+            <div class="sitename-container">
+                <h1>TrueSkin</h1>
+            </div>
+        </div>
+        <img src="./images/prince-akachi-LWkFHEGpleE-unsplash.jpg">
+    </div>
+        <!-- end hero banner -->
 </body>
 </html>
