@@ -2,76 +2,106 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./styles/accordion.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/card.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/content.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/embedded video.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/google font.css" />
-    <link rel="stylesheet" type="text/css" href="./styles/hero banner.css" />
-    <title>Responsive and Static Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles/accordion.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/card.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/content.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/embedded video.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/google font.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/hero banner.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Responsive and Static Website</title>
 </head>
 
 <body>
-    <!-- accordion -->
-    <div class="navbar">
+  <!-- accordion -->
+  <div class="navbar">
+    <a href="#home">
+      <h2 class="logo">TrueSkin</h2>
+    </a>
+    <hr>
+    <div class="topnav-container">
+      <div class="topnav" id="myTopnav">
         <a href="#home" class="active">Home</a>
-        <button class="dropbtn">Shop All</button>
-        <div class="dropdown-content">
-            <a href="#">Eyes</a>
-            <a href="#">Lips</a>
-            <a href="#">Face</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div class="dropdown">
+          <button class="dropbtn">Shop All
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
         </div>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+    </div>
+  </div>
+  <!-- end accordion -->
+
+  <!-- hero banner -->
+  <div class="hero-container">
+    <div class="hero-left-container">
+      <span class="slogan">BE BOLD. BE CONFIDENT. BE YOU.</span>
+      <img src="./images/ashley-piszek-crSkE1CKQL0-unsplash.jpg" alt="4 shades of lipstick">
+      <div class="shopbtn-container">
+        <a href="#shop-all">
+          <button class="shopbtn">Shop all<i class="fa fa-long-arrow-right"></i></button>
         </a>
+      </div>
+      <!-- <div class="sitename-container"> -->
+      <h1 class="sitename">TrueSkin</h1>
+      <!-- </div> -->
     </div>
-    <!-- end accordion -->
-
-    <!-- hero banner -->
-    <div class="hero-grid">
-        <div class="hero-flex">
-            <p>BE BOLD. BE CONFIDENT. BE YOU.</p>
-            <img src="./images/ashley-piszek-crSkE1CKQL0-unsplash.jpg" alt="4 shades of lipstick">
-            <div class="shopbtn-flex">
-                <button class="shopbtn">Shop all</button>
-                <img src="./images/vecteezy_arrow-symbol-isolated-flat-design-vector-illustration_17436350.jpg">
-            </div>
-            <div class="sitename-container">
-                <h1>TrueSkin</h1>
-            </div>
-        </div>
-        <img src="./images/prince-akachi-LWkFHEGpleE-unsplash.jpg">
+    <div class="img-container">
+      <img src="./images/prince-akachi-LWkFHEGpleE-unsplash.jpg">
     </div>
-        <!-- end hero banner -->
+  </div>
+  <!-- end hero banner -->
 
-        <!-- cards -->
-        <div class="card-container">
-            <div class="card">
-              <div class="card-overlay">
-                <h3>FACE</h3>
-              </div>
-              <img src="/assets1/face.jpg" alt="Face">
-            </div>
-    
-            <div class="card">
-              <div class="card-overlay">
-                <h3>EYES</h3>
-              </div>
-              <img src="/assets1/eyes.jpg" alt="Eyes">
-            </div>
-    
-            <div class="card">
-              <div class="card-overlay">
-                <h3>LIPS</h3>
-              </div>
-              <img src="/assets1/lips.jpg" alt="Card 3">
-            </div>
-          </div>
-         <!-- end cards -->
+  <!-- cards -->
+  <div class="card-container">
+    <div class="card">
+      <div class="card-overlay">
+        <h3>FACE</h3>
+      </div>
+      <img src="/assets1/face.jpg" alt="Face">
+    </div>
+
+    <div class="card">
+      <div class="card-overlay">
+        <h3>EYES</h3>
+      </div>
+      <img src="/assets1/eyes.jpg" alt="Eyes">
+    </div>
+
+    <div class="card">
+      <div class="card-overlay">
+        <h3>LIPS</h3>
+      </div>
+      <img src="/assets1/lips.jpg" alt="Card 3">
+    </div>
+  </div>
+  <!-- end cards -->
+
+  <!-- js for navbar -->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+  <!-- end js -->
+
 </body>
+
 </html>
