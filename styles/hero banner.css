@@ -4,10 +4,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 20px 0px;
 }
 
 .hero-container img {
-    width: 40%;
+    width: 40%;  
 }
 
 .hero-left-container {
