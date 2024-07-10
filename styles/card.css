@@ -3,14 +3,16 @@
     justify-content: center;
     gap: 5px;
     flex-wrap: wrap;
+    margin-bottom: 0%;
   }
   
   .card {
     position: relative;
     flex: 1 1 490px; 
-    max-width: 490px;
-    height: 550px; 
+    max-width: 500px;
+    height: 560px; 
     overflow: hidden;
+    margin-top: 5px;
   }
   
   .card-overlay {
@@ -26,7 +28,7 @@
     padding: 20px;
     background-color: rgba(243, 205, 182, 0.269); 
     color: #fff; 
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.2s ease; 
   }
   
   .card:hover .card-overlay {
@@ -36,7 +38,7 @@
   .card h3, .card p {
     margin: 0;
     text-align: center;
-    font-size: 30px
+    font-size: 50px
   }
   
   .card img {
