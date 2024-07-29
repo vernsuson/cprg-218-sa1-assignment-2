@@ -7,19 +7,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./styles/accordion.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/navbar.css" />
   <link rel="stylesheet" type="text/css" href="./styles/card.css" />
   <link rel="stylesheet" type="text/css" href="./styles/content.css" />
   <link rel="stylesheet" type="text/css" href="./styles/embedded video.css" />
   <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
   <link rel="stylesheet" type="text/css" href="./styles/google font.css" />
   <link rel="stylesheet" type="text/css" href="./styles/hero banner.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/accordion2.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script async src="./javascript/navbar.js"></script>
+  <script async src="./javascript/accordion.js"></script>
   <title>Responsive and Static Website</title>
 </head>
 
 <body>
-  <!-- accordion -->
+  <!-- navbar -->
   <div class="navbar">
     <a href="#home">
       <h2 class="logo">TrueSkin</h2>
@@ -27,7 +30,7 @@
     <hr>
     <div class="topnav-container">
       <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">Home</a>
+        <a href="#home">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
         <div class="dropdown">
@@ -45,7 +48,7 @@
       </div>
     </div>
   </div>
-  <!-- end accordion -->
+  <!-- end navbar -->
 
   <!-- hero banner -->
   <div class="hero-container">
@@ -92,25 +95,11 @@
 
   <!-- video -->
   <div class="video">
-    <video width="1510" height="890" autoplay muted loop>
+    <video width="100%" height="100%" autoplay muted loop>
       <source src="Video/video.mp4" type="video/mp4">
   </div>
   </video>
   <!-- end video -->
-  
-  
-  <!-- js for navbar -->
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-  </script>
-  <!-- end js -->
 
   <!-- content -->
   <div class="content">
@@ -141,6 +130,26 @@
     </div>
   </div>
   <!-- end content -->
+
+  <!-- accordion -->
+  <div class="faqs">
+    <h1>Frequently Asked Questions</h1>
+    <button class="accordion">Can I ship internationally?</button>
+    <div class="panel">
+      <p>We are currently shipping within Canada only.</p>
+    </div>
+
+    <button class="accordion">How do I know the status of my order?</button>
+    <div class="panel">
+      <p>Login to your account and go to "My Orders" section to view your order status and order history.</p>
+    </div>
+
+    <button class="accordion">What payment methods do you accept?</button>
+    <div class="panel">
+      <p>We are currently accepting payments via debit and credit cards, and PayPal.</p>
+    </div>
+  </div>
+  <!-- end accordion -->
 
 
   <!-- footer -->
