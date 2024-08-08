@@ -1,0 +1,62 @@
+body {
+    box-sizing: border-box;
+    background-color: #FEF9EC;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.contactus {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.contactform {
+    display: flex;
+    flex-direction: column;
+    background-color: #FEF9EC;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.formcontainer {
+    background-color: #DAD3C1;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #777;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #777;
+}
