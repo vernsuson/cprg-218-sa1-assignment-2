@@ -10,32 +10,32 @@
   <link rel="stylesheet" type="text/css" href="./styles/navbar.css" />
   <link rel="stylesheet" type="text/css" href="./styles/card.css" />
   <link rel="stylesheet" type="text/css" href="./styles/content.css" />
-  <link rel="stylesheet" type="text/css" href="./styles/embedded video.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/embedded-video.css" />
   <link rel="stylesheet" type="text/css" href="./styles/footer.css" />
-  <link rel="stylesheet" type="text/css" href="./styles/google font.css" />
-  <link rel="stylesheet" type="text/css" href="./styles/hero banner.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/google-font.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/hero-banner.css" />
   <link rel="stylesheet" type="text/css" href="./styles/accordion2.css" />
   <link rel="stylesheet" type="text/css" href="./styles/shop.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script async src="./javascript/navbar.js"></script>
   <script async src="./javascript/accordion.js"></script>
-  <script async src="./javascript/api.js"></script>
   <title>Responsive and Static Website</title>
 </head>
 
 <body>
   <!-- navbar -->
   <div class="navbar">
-    <a href="#home">
+    <a href="/index.html">
       <h2 class="logo">TrueSkin</h2>
     </a>
     <hr>
     <div class="topnav-container">
       <div class="topnav" id="myTopnav">
-        <a href="./index.html">Home</a>
+        <a href="/index.html">Home</a>
         <a href="#news">News</a>
-        <a href="./contact.html">Contact</a>
-        <div class="dropdown">
+        <a href="/contact.html">Contact</a>
+        <a href="/shop.html">Shop All</a>
+        <!-- <div class="dropdown">
           <button class="dropbtn">Shop All
             <i class="fa fa-caret-down"></i>
           </button>
@@ -44,7 +44,7 @@
             <a href="#face">Face</a>
             <a href="#lips">Lips</a>
           </div>
-        </div>
+        </div> -->
         <a href="#about">About</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
@@ -56,7 +56,16 @@
   <div class="allproducts-container">
     <h1>Shop All</h1>
     <select id="makeup-categories">
-        <option value="">Select a category</option>
+        <option value="">Filter by category</option>
+        <option value="blush">Blush</option>
+        <option value="bronzer">Bronzer</option>
+        <option value="eyebrow">Eyebrow</option>
+        <option value="eyeliner">Eyeliner</option>
+        <option value="eyeshadow">Eyeshadow</option>
+        <option value="foundation">Foundation</option>
+        <option value="lip_liner">Lip Liner</option>
+        <option value="lipstick">Lipstick</option>
+        <option value="mascara">Mascara</option>
     </select>
     <div id="makeup-cards" class="cards-container"></div>
 </div>
@@ -90,12 +99,12 @@
           <h1>TrueSkin</h1>
         </div>
         <div class="social-media">
-          <a href="#"><img src="images/Facebook.svg" alt="Facebook" /></a>
-          <a href="#"><img src="images/IG.svg" alt="Twitter" /></a>
-          <a href="#"><img src="images/X.svg" alt="X" /></a>
-          <a href="#"><img src="images/Youtube.svg" alt="Youtube" /></a>
-          <a href="#"><img src="images/TikTok.svg" alt="TikTok" /></a>
-          <a href="#"><img src="images/LinkedIn.svg" alt="LinkedIn" /></a>
+          <a href="#"><img src="./images/Facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="./images/IG.svg" alt="Instagram" /></a>
+          <a href="#"><img src="./images/X.svg" alt="X" /></a>
+          <a href="#"><img src="./images/Youtube.svg" alt="Youtube" /></a>
+          <a href="#"><img src="./images/TikTok.svg" alt="TikTok" /></a>
+          <a href="#"><img src="./images/LinkedIn.svg" alt="LinkedIn" /></a>
         </div>
       </div>
     </div>
