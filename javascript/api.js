@@ -1,6 +1,6 @@
 console.log("testing");
 
-const makeupEndpoint = "http://makeup-api.herokuapp.com/api/v1/products.json";
+const makeupEndpoint = "https://makeup-api.herokuapp.com/api/v1/products.json";
 const dropdown = document.getElementById("makeup-categories");
 const makeupsDiv = document.getElementById("makeup-cards");
 let makeupResults;
@@ -74,7 +74,7 @@ dropdown.addEventListener("change", () => {
 
 async function fetchMakeupbyCategory(category) {
   const response = await fetch(
-    `http://makeup-api.herokuapp.com/api/v1/products.json?product_type=${category}`
+    `https://makeup-api.herokuapp.com/api/v1/products.json?product_type=${category}`
   );
   const data = await response.json();
   return data;
