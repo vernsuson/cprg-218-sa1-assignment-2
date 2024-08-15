@@ -32,67 +32,80 @@
     <div class="topnav-container">
       <div class="topnav" id="myTopnav">
         <a href="./index.html">Home</a>
-        <a href="#news">News</a>
+        <a href="#">News</a>
         <a href="./contact.html">Contact</a>
         <a href="./shop.html">Shop All</a>
-        <!-- <div class="dropdown">
-          <button class="dropbtn">Shop All
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#eyes">Eyes</a>
-            <a href="#face">Face</a>
-            <a href="#lips">Lips</a>
-          </div>
-        </div> -->
-        <a href="#about">About</a>
+        <a href="#">About</a>
         <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
       </div>
     </div>
   </div>
   <!-- end navbar -->
 
-  <!-- contact us -->
+  <!-- contact area -->
 
-  <!-- end of contact us -->
-  <div class="contactus">
-    <h1>We'd love to hear from you!</h1>
-    <h3>We appreciate hearing from our customers. Feel free to message us through email, our social media channels, or
-      through the contact form below.</p>
-      <h3>If you prefer talking to someone, you may also call us through the number below.</p>
-  </div>
+  <section class="contact">
+    <div class="contact-left">
+      <div class="contact-us">
+        <h1>We'd love to hear from you!</h1>
+        <p>We appreciate hearing from our customers. Feel free to message us through email, our social media channels,
+          or
+          through the contact form below.</p>
+        <p>If you prefer talking to someone, you may also call us through the number below.</p>
+      </div>
 
-  <!--contact details -->
-  <div class="contact details">
-    <h2>Contact Details</h2>
-    <p>Phone: 123-456-7890</p>
-    <p>Email: TrueSkin@trueskin.com</p>
-    <p>Monday-Friday 8:00am-7:00pm MST</p>
-  </div>
+      <div class="contact-details">
+        <h2>Contact Details</h2>
+        <p>Phone: 123-456-7890</p>
+        <p>Email: TrueSkin@trueskin.com</p>
+        <p>Monday-Friday 8:00am-7:00pm MST</p>
+      </div>
+    </div>
 
-  <!-- end of contact details -->
-  <!-- contact form -->
+    <div class="contact-form">
+      <div class="form-container">
+        <h1>Contact Form</h1>
+        <p>For any questions or concerns regarding our products, let us know by filling out the form below.</p>
+        <br>
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email..">
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+  </section>
 
-  <div class="contactform">
-    <div class="formcontainer">
-      <h1>Contact Form</h1>
-      <p>For any questions or concerns regarding our products, let us know by filling out the form below.</p>
-      <br>
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="email">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email..">
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
+  <!-- end of contact -->
+
+  <!-- accordion -->
+  <div class="faqs">
+    <h1>Frequently Asked Questions</h1>
+    <button class="accordion">Can I ship internationally?</button>
+    <div class="panel">
+      <p>We are currently shipping within Canada only.</p>
+    </div>
+
+    <button class="accordion">How do I know the status of my order?</button>
+    <div class="panel">
+      <p>Login to your account and go to "My Orders" section to view your order status and order history.</p>
+    </div>
+
+    <button class="accordion">What payment methods do you accept?</button>
+    <div class="panel">
+      <p>We are currently accepting payments via debit and credit cards, and PayPal.</p>
     </div>
   </div>
+  <!-- end accordion -->
 
-  <!-- end of contact form -->
+
+
 
   <!-- footer -->
   <footer class="footer">

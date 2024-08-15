@@ -32,7 +32,6 @@ async function fetchAndDisplayMakeup() {
   });
 }
 
-// Call the function to fetch and display makeup
 fetchAndDisplayMakeup().catch((error) =>
   console.error("Error fetching makeup product types:", error)
 );
@@ -40,7 +39,6 @@ fetchAndDisplayMakeup().catch((error) =>
 dropdown.addEventListener("change", () => {
   const category = dropdown.value;
 
-  // Clear existing cards
   makeupsDiv.innerHTML = "";
 
   if (category) {
